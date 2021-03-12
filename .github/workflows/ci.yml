@@ -1,7 +1,7 @@
 name: CI
 
 # Run this workflow every time a new commit pushed to your repository
-on: push
+on: [push, pull_request]
 
 jobs:
   # Set the job key. The key is displayed as the job name
@@ -26,6 +26,7 @@ jobs:
           FILTER_REGEX_EXCLUDE: .*vendor/.*|.*web/.*
           VALIDATE_PHP_PHPSTAN: false
           VALIDATE_PHP_PSALM: false
+          VALIDATE_JSCPD: false
           VALIDATE_DOCKERFILE_HADOLINT: false
 
   build-test:
