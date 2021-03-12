@@ -67,6 +67,10 @@ class ImageProcessor extends Processor
     {
         $command = new Command(self::IM_CONVERT_COMMAND);
 
+        if ($outputImage->getInputImage()->isInputPdf() && !empty($this->options->getOption('density'))) {
+            $command->addArgument('-density', $this->options->getOption('density'));
+        }
+
         if ($outputImage->getInputImage()->isInputGif()) {
             $command->addArgument('-coalesce');
         }

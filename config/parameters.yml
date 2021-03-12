@@ -77,6 +77,7 @@ options_keys:
   tm: time
   clsp: colorspace
   mnchr: monochrome
+  dnst: density
 
 #Default options values
 default_options:
@@ -116,3 +117,4 @@ default_options:
   time: '00:00:01'
   colorspace: 'sRGB'
   monochrome: null
+  density: null
