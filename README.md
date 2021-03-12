@@ -402,9 +402,9 @@ _Description:_ Sets the target page of the PDF. If not set, the default is page 
 _Default:_ 72  
 _Description:_ Sets the PDF density. If not set, the default is 72.
 
-**example:`pg_300`**
+**example:`dnst_300`**
 
-`pg_2` : `https://oi.flyimg.io/upload/dnst_300/http://mudawn.com/lighthouses.pdf`
+`dnst_2` : `https://oi.flyimg.io/upload/dnst_300/http://mudawn.com/lighthouses.pdf`
 
 ## Video options
 
