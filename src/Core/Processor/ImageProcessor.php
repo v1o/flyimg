@@ -75,6 +75,8 @@ class ImageProcessor extends Processor
             $command->addArgument('-coalesce');
         }
 
+        $command->addArgument('-auto-orient');
+
         $pdfPageNo = $outputImage->getInputImage()->isInputPdf() ?
             '[' . ($outputImage->extractKey('page_number') - 1) . ']' :
             '';
